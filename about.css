@@ -1,0 +1,198 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+ body{
+    font-family: "Open Sans", sans-serif;   
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  scroll-behavior: smooth;
+
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding: right 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+.navbar-links{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.about-head{
+    font-size: 70px;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+    /* margin-left: 500px; */
+    /* margin-bottom: 20px; */
+    color:white;
+    
+}
+.about-text{
+    border: 10px;
+    border-color: rgb(4, 0, 0);
+    line-height: 2;
+    text-align: justify;
+    font-size: small;
+}
+.about{
+    /* height: 550px ; */
+    margin: 0;
+    padding: 0;
+    background-image: url(/wanderlust-kannada-images-main/images/abt-hero-head.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+     height: 550px;
+    /* width: 100%; */
+    /* display: flex; */
+    padding: bottom 10px;
+}
+/* .about-content{
+      background-color: #C0D6FF;
+      padding: 35px; */
+
+/* } */
+.about-main{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    /* padding: 250px; */
+    /* margin-top: 50px;
+    padding-left: 100px ; */
+}
+.btn-1{
+    background-color: #2a74ff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+    
+.about-layout{
+    margin: 30px;   
+    display:flex;
+    /* align-items: center; */
+    gap: 40px;
+
+}
+.btn-1:hover{
+    transform: scale(1.1);
+}
+.cont-layout{
+    display: flex;
+    flex-wrap: 0 0 50%;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 25px;
+    text-align: center;
+    text-align: justify;
+   
+}
+
+.cont-2{
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-layout{
+    padding: 25px;
+    flex: 0 0 50%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+    /* padding: 15px; */
+}
+
+.c-2{
+    /* border-radius: 10px; */
+    /* border-style:outset; */
+    padding: 25px;
+}
+
+.c-2:hover{
+    /* border: black; */
+     border-radius: 10px; 
+    border-style:outset;
+   background-color:#F05123; 
+    transition:0.5s,ease;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+@media screen and (max-width:541px) {
+     .navbar{
+        padding-bottom: 20px;
+        margin: auto;
+        align-items: center;
+        
+    }
+
+   .navbar img{
+        margin: auto;
+    }
+
+    .navbar-links{
+        margin: auto;
+    }
+
+    .about-head{
+        font-size: 55px;
+    }
+    .about-main{
+        font-size: 20px;;
+    }
+    
+ 
+    
+}
+ @media screen and (max-width:768px) {
+    .about-layout{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont-layout{
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .c-layout{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+   
+    
+ }
+ footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

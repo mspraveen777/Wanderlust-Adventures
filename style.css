@@ -1,0 +1,294 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+ body{
+    font-family: "Open Sans", sans-serif;   
+ }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  scroll-behavior: smooth;
+
+    
+}
+a{
+    text-decoration: none;
+   color: inherit;
+    margin-right:0px;
+}
+
+.navbar{
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   flex-wrap: wrap;
+   background-color: white;
+}
+
+.navbar-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+
+
+.hero{
+    height: 550px;
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/wanderlust-kannada-images-main/images/hero.png);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+ 
+    
+}
+
+.hero-main{
+    font-size: 70px;
+    animation-name: head-color;
+    
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
+/* 
+ */
+
+.hero-lead{
+    font-size: 25px;
+}
+.btn{   
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: blue;
+}
+
+.about{
+  padding: 20px;
+}
+
+.about-title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-layout{
+    display: flex ;
+    gap: 25px;  
+    align-items: center;   
+    
+}
+
+.about-text{
+    line-height: 2;
+}
+
+.value{
+    background-color: #c0ec73; 
+    padding: 20px ;
+    padding-bottom: 30px;
+    
+    
+}
+
+
+.value-title{
+    text-align: center;
+    font-size: 35px ;
+    
+}
+
+.value-lead{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.value-flex{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    padding-top: 25px;
+    
+}
+
+.adventures-title{  
+    text-align: center;
+    font-size: 35px;
+    margin-top: 35px;
+}
+
+.adventures-lead{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.destination-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    text-align: center;
+    gap: 35px;
+    margin-bottom: 80px;
+    
+   
+}
+
+.grid-item img{
+    width: 100%;
+     border: 5px solid #dcffa0;
+     border-radius: 15px;
+    
+
+}
+
+
+
+
+.grid-item:hover img{
+    transform:scale(1.05);
+    margin-bottom: 20px;
+    transition:0.5s,ease-in-out;
+    transition-duration: 300;
+
+}
+
+.contact{
+    background-color: #C0D6FF;
+    padding: 35px;
+}
+
+.contact-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    width:650px;
+    margin: auto;
+    max-width: 100%;
+
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,textarea{
+    width: 100%;
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.btn-1{
+    background-color:#2a74ff ;
+    color:#ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold ;
+    display: inline-block;
+}
+
+.about img{
+    margin: auto;
+}
+
+.text-centre{
+    text-align: center;
+}
+
+ footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center ;
+    margin-bottom: 5px;
+ }   
+
+ @media screen and (max-width:760px) {
+    .about-layout{
+        flex-direction: column;
+    }
+
+    .value-flex{
+        flex-direction: column; 
+    }
+
+    .destination-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+   
+    
+ }
+
+ @media screen and (max-width:506px){
+     .navbar{
+        padding-bottom: 20px;
+        margin: auto;
+        
+    }
+
+   .navbar img{
+        margin: auto;
+    }
+
+    .navbar-links{
+        margin: auto;
+    }
+
+    .hero-main{
+        font-size: 55px;
+    }
+    .hero-lead{
+        font-size: 20px;;
+    }
+    
+ } 
+
+.btn-1:hover{
+    transform: scale(1.1);
+}
+
+@keyframes head-color{
+    from{
+       color: #ffffff;
+       left: 10px;
+    }
+    to{
+        color: #ffd13bd0;
+        right: 50px;
+    }
+}
+
+@keyframes logo-dir {
+   
+}
+.about-head{
+    size: 500px;
+}
+
+    
+
